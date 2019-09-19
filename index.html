@@ -11,14 +11,16 @@
           <a>
             <img src="img/logo.png" alt="ТЕХНОМАРТ лого" width="220" height="47">
           </a>
-          <p>
-          <label for="search">Поиск
+
+         <div>
             <form action="https://echo.htmlacademy.ru" method="GET">
-            <input id="search" "type="search">
-            <button type="submit">Поиск</button>
+             <label for="search_field">Поиск
+              <input type="search" id="search_field">
+             </label>
+             <button type="submit">Поиск</button>
             </form>
-          </label>
-          </p>
+         </div>
+
           <a href="#">Закладки</a>
           <a href="#">Корзина</a>
           <a href="#">Оформить заказ</a>
@@ -29,8 +31,8 @@
           <p>г. Санкт-Петербург, Б. Конюшенная, д. 19/8</p>
         </div>
         <p>
-          <button type="button">Войти</button>
-          <button type="button">Регистрация</button>
+          <a href="#">Войти</a>
+          <a href="#">Регистрация</a>
         </p>
         <ul>
           <li><a href="index.html">Главная</a></li>
@@ -82,28 +84,28 @@
       <a href="#">Все популярные товары</a>
       <ul>
           <li>
-              <img src="img/Perforator_1.png" width="218" height="170" alt="Перфоратор BOSH BFG 3000">
-              <h3><a href="#">Перфоратор BOSH<br> BFG 9000</a></h3>
-              <p>32 500 P.</p>
-              <p><a href="#">25 500 P.</a></p>
-            </li>
-            <li>
-              <img src="img/Perforator_2.png" width="218" height="170" alt="Перфоратор BOSH BFG 6000">
-              <h3><a href="#">Перфоратор BOSH<br> BFG 3000</a></h3>
-              <p>22 500 P.</p>
-              <p><a href="#">15 500 P.</a></p>
-            </li>
-            <li>
-                <img src="img/Perforator_3.png" width="218" height="170" alt="Перфоратор BOSH BFG 6000">
-                <h3><a href="#">Перфоратор BOSH<br> BFG 6000</a></h3>
-                <p>30 500 P.</p>
-                <p><a href="#">25 500 P.</a></p>
-              </li>
-            <li>
-              <img src="img/Perforator_4.png" width="218" height="170" alt="Перфоратор BOSH BFG 3000">
-              <h3><a href="#">Перфоратор BOSH<br> BFG 2000</a></h3>
-              <p><a href="#">12 500 P.</a></p>
-            </li>
+            <img src="img/Perforator_1.png" width="218" height="170" alt="Перфоратор BOSH BFG 3000">
+            <h3><a href="#">Перфоратор BOSH<br> BFG 9000</a></h3>
+            <p>32 500 P.</p>
+            <p><a href="#">25 500 P.</a></p>
+          </li>
+          <li>
+            <img src="img/Perforator_2.png" width="218" height="170" alt="Перфоратор BOSH BFG 6000">
+            <h3><a href="#">Перфоратор BOSH<br> BFG 3000</a></h3>
+            <p>22 500 P.</p>
+            <p><a href="#">15 500 P.</a></p>
+          </li>
+          <li>
+            <img src="img/Perforator_3.png" width="218" height="170" alt="Перфоратор BOSH BFG 6000">
+            <h3><a href="#">Перфоратор BOSH<br> BFG 6000</a></h3>
+            <p>30 500 P.</p>
+            <p><a href="#">25 500 P.</a></p>
+          </li>
+          <li>
+            <img src="img/Perforator_4.png" width="218" height="170" alt="Перфоратор BOSH BFG 3000">
+            <h3><a href="#">Перфоратор BOSH<br> BFG 2000</a></h3>
+            <p><a href="#">12 500 P.</a></p>
+          </li>
       </ul>
     </section>
     <section><!-- Популярные производители -->
@@ -201,35 +203,6 @@
        <p><button type="button">Заблудились? Напишите нам!</button></p>
        <!-- Здесь будет форма -->
     </section>
-    <section>
-      <h2>Как до нас добраться</h2>
-      <!--модальное окно с картой-->
-      <img src="img/map_big.jpg" width="970" height="476" alt="г. Санкт-Петербург, Б. Конюшенная, д. 19/8">
-      <button type="button">Закрыть</button>
-    </section>
-    <section>
-      <h2>Напишите нам</h2>
-        <!--модальное окно с формой обратной связи-->
-        <form action="https://echo.htmlacademy.ru" method="POST">
-         <p>
-          <label for="name">Ваше имя:
-           <input type="text" id="name" placeholder="Имя Фамилия">
-          </label>
-         </p>
-         <p>
-          <label for="email">Ваш email:
-            <input type="text" id="email" placeholder="email@example.com">
-          </label>
-         </p>
-         <p>
-          <label for="letter">Текст письма:
-            <textarea id="letter" placeholder="В свободной форме"></textarea>
-          </label>
-         </p>
-          <button type="submit">Отправить</button>
-          <button type="button">Закрыть</button>
-        </form>
-      </section>
   </main>
   <footer>
    <div>
@@ -265,6 +238,34 @@
     <p>Обратная связь: <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
     <p>Разработано - <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
   </footer>
-
+  <section>
+    <h2>Как до нас добраться</h2>
+    <!--модальное окно с картой-->
+    <img src="img/map_big.jpg" width="970" height="476" alt="г. Санкт-Петербург, Б. Конюшенная, д. 19/8">
+    <button type="button">Закрыть</button>
+  </section>
+  <section>
+     <h2>Напишите нам</h2>
+       <!--модальное окно с формой обратной связи-->
+        <form action="https://echo.htmlacademy.ru" method="POST">
+         <p>
+          <label for="name">Ваше имя:
+           <input type="text" id="name" placeholder="Имя Фамилия">
+          </label>
+         </p>
+         <p>
+          <label for="email">Ваш email:
+            <input type="text" id="email" placeholder="email@example.com">
+          </label>
+         </p>
+         <p>
+          <label for="letter">Текст письма:
+            <textarea id="letter" placeholder="В свободной форме"></textarea>
+          </label>
+         </p>
+          <button type="submit">Отправить</button>
+          <button type="button">Закрыть</button>
+        </form>
+    </section>
 </body>
 </html>
