@@ -287,8 +287,33 @@ html, body {
   min-height: 3151px;
 }
 body {
- /* Временно для сетки */
-  background-image: url('img/technomart-index.jpg');
-  background-size: 1372px auto;
+ /* ______________________________Временно для сетки__________________________________________________ */
+  background-image: url('../img/technomart-index.jpg');
+  background-size: 1200px auto;
   background-repeat: no-repeat;
 }
+div {
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+p {
+  outline: 2px solid green;
+  outline-offset: -2px;
+}
+a {
+  outline: 2px solid blue;
+  outline-offset: -2px;
+}
+section {
+  outline: 2px solid rgb(179, 252, 43);
+  outline-offset: -2px;
+}
+ul {
+  outline: 2px solid rgb(250, 6, 230);
+  outline-offset: -2px;
+}
+li {
+  outline: 2px solid rgb(18, 240, 248);
+  outline-offset: -2px;
+}
+
