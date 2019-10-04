@@ -660,6 +660,8 @@ html, body {
   outline: 2px solid blue;
   outline-offset: -2px;
   overflow: hidden;
+  display: flex;
+  flex-direction: row;
 }
 .filter-all {
   outline: 2px solid magenta;
@@ -693,23 +695,29 @@ html, body {
   outline: 2px solid greenyellow;
   outline-offset: -2px;
   width: 700px;
-  height: 42px;
+  height: 40px;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 }
 .items-card {
   outline: 2px solid black;
   outline-offset: -2px;
   width: 700px;
   height: 1146px;
+  display: flex;
+  flex-direction: column;
 }
 .items-card-list {
   width: 700px;
-  height: 996px;
+  height: 1020px;
   outline: 2px solid crimson;
   outline-offset: -2px;
 }
 .items-card-navigation {
-  width: 700px;
-  height: 38px;
+  width: 500px;
+  height: 40px;
+  outline: 2px solid crimson;
+  outline-offset: -2px;
+  margin-bottom: 60px;
+  margin-top: 52px;
 }
