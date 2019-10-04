@@ -208,8 +208,6 @@ h2 {
   opacity: 0.5;
   text-decoration: none;
 }
-
-
 .breadcrumbs li a {
   font-size: 13px;
   line-height: 18px;
@@ -285,35 +283,433 @@ h2 {
 html, body {
   min-width: 1200px;
   min-height: 3151px;
+  box-sizing: border-box;
 }
-body {
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+.index {
  /* ______________________________Временно для сетки__________________________________________________ */
   background-image: url('../img/technomart-index.jpg');
   background-size: 1200px auto;
   background-repeat: no-repeat;
 }
-div {
+.catalog_2 {
+  background-image: url('../img/technomart-catalog.jpg');
+  background-size: 1200px auto;
+  background-repeat: no-repeat;
+}
+.header {
+  display: flex;
   outline: 2px solid red;
   outline-offset: -2px;
+  overflow: hidden;
+  height: 320px;
 }
-p {
+.container {
+  outline: 2px solid red;
+  outline-offset: -2px;
+  overflow: hidden;
+}
+.footer {
+  outline: 2px solid red;
+  outline-offset: -2px;
+  overflow: hidden;
+  height: 300px;
+}
+.main-block1 {
   outline: 2px solid green;
   outline-offset: -2px;
+  overflow: hidden;
+  height: 500px;
 }
-a {
-  outline: 2px solid blue;
+.popular-items {
+  outline: 2px solid green;
   outline-offset: -2px;
+  overflow: hidden;
+  height: 460px;
 }
-section {
-  outline: 2px solid rgb(179, 252, 43);
+.popular-manufacturers {
+  outline: 2px solid green;
   outline-offset: -2px;
-}
-ul {
-  outline: 2px solid rgb(250, 6, 230);
-  outline-offset: -2px;
-}
-li {
-  outline: 2px solid rgb(18, 240, 248);
-  outline-offset: -2px;
+  overflow: hidden;
+  height: 510px;
 }
 
+.slider-bottom {
+  outline: 2px solid green;
+  outline-offset: -2px;
+  overflow: hidden;
+  height: 525px;
+}
+.index-columns {
+  outline: 2px solid green;
+  outline-offset: -2px;
+  overflow: hidden;
+  height: 539px;
+}
+.about-company
+.contact-map
+
+.footer-nav {
+  outline: 2px solid green;
+  outline-offset: -2px;
+  overflow: hidden;
+  width: 943px;
+  height: 195px;
+  display: block;
+}
+.footer-bottom {
+  outline: 2px solid green;
+  outline-offset: -2px;
+  overflow: hidden;
+  height: 105px;
+  display: block;
+}
+.main-navigation {
+  width: 942px;
+  height: 260px;
+  outline: 2px solid green;
+  outline-offset: -2px;
+  background-color: transparent;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.header-top {
+  outline: 2px solid green;
+  outline-offset: -2px;
+  overflow: hidden;
+  width: 942px;
+  height: 42px;
+  display: flex;
+}
+.header-middle {
+  outline: 2px solid green;
+  outline-offset: -2px;
+  overflow: hidden;
+  width: 942px;
+  height: 100px;
+  margin-top: 30px;
+  margin-bottom: 28px;
+  display: flex;
+}
+.site-navigation {
+  outline: 2px solid green;
+  outline-offset: -2px;
+  overflow: hidden;
+  width: 942px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: stretch;
+  justify-content: space-between;
+}
+.main-heder-logo {
+  width: 223px;
+  height: 42px;
+  outline: 2px solid blue;
+  outline-offset: -2px;
+  overflow: hidden;
+  display: block;
+}
+.search {
+  width: 274px;
+  height: 42px;
+  outline: 2px solid blue;
+  outline-offset: -2px;
+  overflow: hidden;
+}
+.top-menu {
+  width: 452px;
+  height: 42px;
+  outline: 2px solid blue;
+  outline-offset: -2px;
+  overflow: hidden;
+  margin: 0 auto;
+  display: flex;
+}
+.text-1 {
+  width: 282px;
+  height: 100px;
+  outline: 2px solid blue;
+  outline-offset: -2px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.contact-header {
+  width: 350px;
+  height: 100px;
+  outline: 2px solid blue;
+  outline-offset: -2px;
+  overflow: hidden;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+}
+.user-navigation {
+  width: 310px;
+  height: 100px;
+  outline: 2px solid blue;
+  outline-offset: -2px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.site-navigation ul {
+  outline: 2px solid yellow;
+  outline-offset: -2px;
+  overflow: hidden;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+.site-navigation ul li {
+  outline: 2px solid greenyellow;
+  outline-offset: -2px;
+  display: block;
+  padding: 20px 28px;
+}
+.top-menu a {
+  outline: 2px solid greenyellow;
+  outline-offset: -2px;
+  display: block;
+  width: 150px;
+  height: 42px;
+  padding: 20px 28px;
+  margin: 0 auto;
+}
+.phone {
+  display: block;
+  width: 270px;
+  height: 45px;
+  outline: 2px solid greenyellow;
+  outline-offset: -2px;
+  margin: 0 auto;
+  margin-top: 16px;
+}
+.adress {
+  display: inline-block;
+  width: 270px;
+  height: 36px;
+  outline: 2px solid greenyellow;
+  outline-offset: -2px;
+  margin: 0 auto;
+}
+
+/*------main------*/
+
+.index-columns {
+  width: 942px;
+  height: 540px;
+  outline: 2px solid blue;
+  outline-offset: -2px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.about-company {
+  outline: 2px solid greenyellow;
+  outline-offset: -2px;
+  width: 570px;
+  height: 540px;
+}
+.contact-map {
+  outline: 2px solid greenyellow;
+  outline-offset: -2px;
+  width: 375px;
+  height: 540px;
+}
+
+
+
+/*------footer------*/
+
+.footer-nav {
+  outline: 2px solid green;
+  outline-offset: -2px;
+  height: 193px;
+}
+.footer-bottom {
+  outline: 2px solid green;
+  outline-offset: -2px;
+  height: 107px;
+}
+.footer-menu-1 {
+  width: 943px;
+  height: 90px;
+  outline: 2px solid blue;
+  outline-offset: -2px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+
+}
+.footer-menu-2 {
+  width: 943px;
+  height: 103px;
+  outline: 2px solid blue;
+  outline-offset: -2px;
+  overflow: hidden;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-logo {
+  width: 220px;
+  height: 68px;
+  background-color: red;
+  display: block;
+}
+.footer-menu-top {
+  width: 555px;
+  height: 42px;
+  outline: 2px solid greenyellow;
+  outline-offset: -2px;
+  margin-right: 50px;
+}
+.adress-footer {
+  outline: 2px solid greenyellow;
+  outline-offset: -2px;
+  width: 350px;
+  height: 65px;
+  overflow: hidden;
+}
+.footer-menu-middle {
+  width: 535px;
+  height: 42px;
+  outline: 2px solid greenyellow;
+  outline-offset: -2px;
+  margin-right: 50px;
+}
+.wrapper {
+  width: 943px;
+  height: 107px;
+  outline: 2px solid blue;
+  outline-offset: -2px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.footer-copyright {
+  width: 245px;
+  height: 90px;
+  outline: 2px solid greenyellow;
+  outline-offset: -2px;
+  display: block;
+}
+
+.footer-social {
+  width: 240px;
+  height: 90px;
+  outline: 2px solid greenyellow;
+  outline-offset: -2px;
+  display: block;
+}
+.back-autor {
+  width: 313px;
+  height: 90px;
+  outline: 2px solid greenyellow;
+  outline-offset: -2px;
+  display: block;
+}
+/*----------catalog------------------------------------------------*/
+.main-catalog {
+  outline: 2px solid red;
+  outline-offset: -2px;
+  height: 1630px;
+}
+.main-center {
+  outline: 2px solid green;
+  outline-offset: -2px;
+  overflow: hidden;
+  width: 946px;
+  height: 1630px;
+  margin: 0 auto;
+}
+.breadcrumbs-catalog {
+  width: 946px;
+  height: 60px;
+  outline: 2px solid blue;
+  outline-offset: -2px;
+  overflow: hidden;
+}
+.name {
+  width: 946px;
+  height: 88px;
+  outline: 2px solid blue;
+  outline-offset: -2px;
+  overflow: hidden;
+}
+
+.text-2 {
+  width: 946px;
+  height: 259px;
+  outline: 2px solid blue;
+  outline-offset: -2px;
+  overflow: hidden;
+  margin-top: 1226px;
+
+}
+.filter-items {
+  width: 946px;
+  height: 1226px;
+  outline: 2px solid blue;
+  outline-offset: -2px;
+  overflow: hidden;
+}
+.filter-all {
+  outline: 2px solid magenta;
+  outline-offset: -2px;
+  width: 246px;
+  height: 1223px;
+  overflow: hidden;
+}
+.items-catalog {
+  outline: 2px solid magenta;
+  outline-offset: -2px;
+  width: 703px;
+  height: 1223px;
+  overflow: hidden;
+}
+.filter-select {
+  outline: 2px solid greenyellow;
+  outline-offset: -2px;
+  width: 222px;
+  height: 269px;
+  margin-right: 10px;
+}
+.filter-brand-energy {
+  outline: 2px solid greenyellow;
+  outline-offset: -2px;
+  width: 220px;
+  height: 269px;
+  margin-right: 10px;
+}
+.sort {
+  outline: 2px solid greenyellow;
+  outline-offset: -2px;
+  width: 700px;
+  height: 42px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.items-card {
+  outline: 2px solid black;
+  outline-offset: -2px;
+  width: 700px;
+  height: 1146px;
+}
+.items-card-list {
+  width: 700px;
+  height: 996px;
+  outline: 2px solid crimson;
+  outline-offset: -2px;
+}
+.items-card-navigation {
+  width: 700px;
+  height: 38px;
+}
