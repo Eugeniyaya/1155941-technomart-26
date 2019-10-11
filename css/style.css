@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 17px;
   font-weight: 400;
@@ -45,6 +44,39 @@ h2 {
   color: #000000;
   font-size: 21px;
   line-height: 21px;
+}
+.in::before {
+  content: "";
+
+  position: absolute;
+  top:27px;
+  left: 24px;
+
+  width: 25px;
+  height: 25px;
+
+  background-image: url('..\img\icon-login.svg');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+
+}
+.user-navigation a.in {
+  width: 121px;
+  height: 45px;
+  background-color: #ffffff;
+  text-align: center;
+  padding-top: 12px;
+  padding-left: 50px;
+}
+
+
+.user-navigation a.reg {
+  width: 150px;
+  height: 45px;
+  background-color: #ffffff;
+  text-align: center;
+  padding-top: 12px;
+
 }
 .site-navigation a{
   color: #ffffff;
@@ -142,9 +174,10 @@ h2 {
   border-radius: 6px;
   border: 3px solid #ffffff;
 }
-.footer-nav {
+/*.footer-nav {
   background-color: #32425c;
   }
+  */
 .footer-menu {
   list-style: none;
 }
@@ -157,24 +190,30 @@ h2 {
   color: #ffd180;
 }
 .footer-menu a {
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 23px;
+  line-height: 26px;
   color: #ffffff;
+  letter-spacing: 2px;
 }
 .adress-footer, .adress-footer a {
   font-size: 18px;
   line-height: 24px;
   color: #f3f7f9;
 }
-.footer-bottom {
+/*.footer-bottom {
   margin: 0px;
   background-color: #293449;
 }
-
+*/
 .footer-social {
   list-style: none;
 }
-
+.footer-menu-top li {
+  list-style: none;
+}
+.footer-menu-top a {
+  color: #ffffff;
+}
 .social-button {
   color: #ffffff;
 }
@@ -198,13 +237,13 @@ h2 {
 
 .footer-menu-2 li a:hover,
 .footer-menu-2 li a:focus,
-.footer-menu li a:hover,
-.footer-menu li a:focus {
+.footer-menu-top li a:hover,
+.footer-menu-top li a:focus {
   text-decoration: underline;
 }
 
 .footer-menu-2 li a:active,
-.footer-menu li a:active {
+.footer-menu-top li a:active {
   opacity: 0.5;
   text-decoration: none;
 }
@@ -321,7 +360,7 @@ html, body {
   outline: 2px solid green;
   outline-offset: -2px;
   overflow: hidden;
-  height: 500px;
+  height: 498px;
 }
 .popular-items {
   outline: 2px solid green;
@@ -400,12 +439,10 @@ html, body {
   overflow: hidden;
   width: 942px;
   height: 60px;
-  display: flex;
-  flex-direction: column;
-  margin-right: auto;
-  margin-left: auto;
-  align-items: stretch;
-  justify-content: space-between;
+  background-colr: #32425c;
+  position: 0 0;
+  background-repeat: no-repeat;
+
 }
 .main-heder-logo {
   width: 223px;
@@ -416,28 +453,43 @@ html, body {
   display: block;
 }
 .search {
-  width: 274px;
+  width: 234px;
   height: 42px;
   outline: 2px solid blue;
   outline-offset: -2px;
   overflow: hidden;
-}
-.top-menu {
-  width: 452px;
-  height: 42px;
-  outline: 2px solid blue;
-  outline-offset: -2px;
-  overflow: hidden;
-  margin: 0 auto;
   display: flex;
+  flex-direction: column;
+  margin-left: 52px;
+  margin-top: 11px;
+}
+.search_field {
+  background-colr: #32425c;
+}
+
+.top-menu {
+  width: 444px;
+  height: 42px;
+  outline: 2px solid blue;
+  outline-offset: -2px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 11px;
+  margin-left: 26px;
+}
+.top-menu a {
+  padding: 0px 20px;
+  outline: 2px solid greenyellow;
+  outline-offset: -2px;
 }
 .text-1 {
   width: 282px;
   height: 100px;
-  outline: 2px solid blue;
-  outline-offset: -2px;
   overflow: hidden;
-  margin: 0 auto;
+  margin-left: 53px;
+  margin-top: 19px;
 }
 .contact-header {
   width: 350px;
@@ -446,7 +498,6 @@ html, body {
   outline-offset: -2px;
   overflow: hidden;
   display: flex;
-  margin: 0 auto;
   flex-direction: column;
 }
 .user-navigation {
@@ -455,50 +506,165 @@ html, body {
   outline: 2px solid blue;
   outline-offset: -2px;
   overflow: hidden;
-  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
 }
 .site-navigation ul {
   outline: 2px solid yellow;
   outline-offset: -2px;
   overflow: hidden;
+  margin: 0;
+  padding-top: 20px;
+  padding-right: 57px;
+  width: 943px;
+  height: 60px;
   display: flex;
+  justify-content: space-between;
   list-style: none;
-  align-items: center;
-}
-.site-navigation ul li {
-  outline: 2px solid greenyellow;
-  outline-offset: -2px;
-  display: block;
-  padding: 20px 28px;
-}
-.top-menu a {
-  outline: 2px solid greenyellow;
-  outline-offset: -2px;
-  display: block;
-  width: 150px;
-  height: 42px;
-  padding: 20px 28px;
-  margin: 0 auto;
+
 }
 .phone {
-  display: block;
-  width: 270px;
-  height: 45px;
-  outline: 2px solid greenyellow;
-  outline-offset: -2px;
-  margin: 0 auto;
-  margin-top: 16px;
+  width: 269px;
+  height: 46px;
+  border: 4px solid #ffffff;
+  border-radius: 2px;
+  overflow: hidden;
+  display: flex;
+  margin-top: 15px;
+  margin-left: 3px;
 }
 .adress {
-  display: inline-block;
   width: 270px;
-  height: 36px;
-  outline: 2px solid greenyellow;
-  outline-offset: -2px;
-  margin: 0 auto;
+  height: 30px;
+  letter-spacing: 0.4px;
+  padding-left: 8px;
+  padding-top: 12px;
+  display: flex;
+  margin-left: 3px;
+  margin-top: -8px;
+  align-items: stretch;
+
 }
 
 /*------main------*/
+.main-block1,
+.popular-items,
+.popular-manufacturers,
+.slider-bottom {
+  outline: 2px solid green;
+  outline-offset: -2px;
+  width: 943px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.blocks-mini-1-3 {
+  outline: 2px solid greenyellow;
+  outline-offset: -2px;
+  width: 943px;
+  height: 125px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 58px;
+}
+ul.blocks-mini-1-3 {
+  margin: 0;
+  margin-top: 58px;
+  padding: 0;
+}
+
+.blocks-mini-1-3 li {
+  outline: 2px solid blue;
+  outline-offset: -2px;
+  list-style: none;
+  width: 300px;
+  height: 123px;
+}
+ul.slider-block1 {
+  padding: 0;
+}
+.slider-block1 li{
+  outline: 2px solid greenyellow;
+  outline-offset: -2px;
+  width: 622px;
+  height: 268px;
+}
+.blocks-mini-4-5 {
+  outline: 2px solid greenyellow;
+  outline-offset: -2px;
+  display: flex;
+  width: 300px;
+  height: 268px;
+  flex-direction: column;
+  margin-left: 20px;
+  justify-content: space-between;
+  padding: 0;
+}
+.blocks-mini-4-5 li {
+  outline: 2px solid blue;
+  outline-offset: -2px;
+  list-style: none;
+  width: 300px;
+  height: 125px;
+}
+.h-field {
+  outline: 2px solid greenyellow;
+  outline-offset: -2px;
+  width: 940px;
+  height: 89px;
+  display: flex;
+  justify-content: space-between;
+}
+.popular-items .h-field {
+  margin-top: 24px;
+}
+.popular-items-list {
+  outline: 2px solid blue;
+  outline-offset: -2px;
+  width: 943px;
+  height: 320px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+.popular-items-list li {
+  outline: 2px solid greenyellow;
+  outline-offset: -2px;
+  width: 220px;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.popular-manufacturers .h-field {
+  margin-top: 10px;
+}
+.popular-manufacturers-list {
+  outline: 2px solid blue;
+  outline-offset: -2px;
+  width: 943px;
+  height: 310px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+ul.popular-manufacturers-list {
+  margin: 0;
+  padding: 0;
+}
+.popular-manufacturers-list li {
+  outline: 2px solid greenyellow;
+  outline-offset: -2px;
+  width: 220px;
+  height: 145px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .index-columns {
   width: 942px;
@@ -533,7 +699,8 @@ html, body {
 .footer-bottom {
   outline: 2px solid green;
   outline-offset: -2px;
-  height: 107px;
+  height: 109px;
+
 }
 .footer-menu-1 {
   width: 943px;
@@ -544,7 +711,6 @@ html, body {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-
 }
 .footer-menu-2 {
   width: 943px;
@@ -555,33 +721,44 @@ html, body {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  margin-top: -16px;
 }
+
 .footer-logo {
   width: 220px;
-  height: 68px;
+  height: 67px;
   background-color: red;
   display: block;
 }
 .footer-menu-top {
-  width: 555px;
+  width: 590px;
   height: 42px;
   outline: 2px solid greenyellow;
   outline-offset: -2px;
-  margin-right: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 21px;
 }
+
 .adress-footer {
   outline: 2px solid greenyellow;
   outline-offset: -2px;
-  width: 350px;
-  height: 65px;
+  width: 390px;
+  height: 64px;
   overflow: hidden;
+  padding: 1px;
+  padding-top: 2px;
+  letter-spacing: 0.6px;
 }
 .footer-menu-middle {
-  width: 535px;
+  width: 584px;
   height: 42px;
   outline: 2px solid greenyellow;
   outline-offset: -2px;
-  margin-right: 50px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding-top: 2px;
 }
 .wrapper {
   width: 943px;
@@ -592,29 +769,60 @@ html, body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 .footer-copyright {
-  width: 245px;
+  width: 246px;
   height: 90px;
   outline: 2px solid greenyellow;
   outline-offset: -2px;
-  display: block;
+  margin-top: 12px;
+  padding: 1px;
 }
 
 .footer-social {
   width: 240px;
   height: 90px;
+  display: flex;
   outline: 2px solid greenyellow;
   outline-offset: -2px;
-  display: block;
+  list-style: none;
+  margin-left: 55px;
 }
+.social-button {
+  width: 43px;
+  height: 43px;
+  display: flex;
+  background-color: #212a3a;
+  border: 1px solid #212a3a;
+  border-radius: 50%;
+  margin-top: 23px;
+  margin-right: 3px;
+  align-content: center;
+  justify-content: center;
+
+
+}
+.button-vk {
+  padding-top: 15px;
+}
+.button-fb {
+  padding-top: 10px;
+}
+.button-inst {
+  padding-top: 10px;
+}
+
 .back-autor {
-  width: 313px;
+  width: 310px;
   height: 90px;
+  display: flex;
+  justify-content: space-between;
+  padding: 3px;
+  margin-left: 2px;
+  margin-top: 15px;
+
   outline: 2px solid greenyellow;
   outline-offset: -2px;
-  display: block;
 }
 /*----------catalog------------------------------------------------*/
 .main-catalog {
@@ -720,4 +928,14 @@ html, body {
   outline-offset: -2px;
   margin-bottom: 60px;
   margin-top: 52px;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
