@@ -11,32 +11,34 @@
     <header class="header">
       <nav class="main-navigation">
         <div class="header-top">
-          <div class="main-heder-logo"></div>
-            <div class="search">
-              <form action="https://echo.htmlacademy.ru" method="GET">
-                <label for="search_field">Поиск
-                <input type="search" class="search_field">
+          <div class="header-top aline-center">
+            <div class="main-heder-logo"></div>
+            <!--<div class="search"> -->
+              <form action="https://echo.htmlacademy.ru" method="GET" class="search">
+                <label for="control_bar-search">
+                <input type="search" class="control_bar-search" id="control_bar-search" placeholder="Поиск">
                 </label>
               </form>
-            </div>
+            <!--</div>-->
             <p class="top-menu">
               <a class="bookmark" href="#">Закладки:</a>
               <a class="cart" href="#">Корзина:</a>
               <a class="oder" href="#">Оформить заказ</a>
             </p>
-        </div>
-          <div class="header-middle">
-              <p class="text-1">Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</p>
-              <div class="contact-header">
-                  <a class="phone" href="tel:+78126660266">+7 (812) 555-05-55</a>
-                  <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-              </div>
-              <p class="user-navigation">
-                  <a class="in" href="#" >Войти</a>
-                  <a class="reg" href="#">Регистрация</a>
-              </p>
           </div>
-          <div class="site-navigation">
+        </div>
+        <div class="header-middle aline-center">
+          <p class="text-1">Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</p>
+          <div class="contact-header">
+            <a class="phone" href="tel:+78126660266">+7 (812) 555-05-55</a>
+            <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          </div>
+          <p class="user-navigation">
+            <a class="in" href="#" >Войти</a>
+            <a class="reg" href="#">Регистрация</a>
+          </p>
+        </div>
+          <div class="site-navigation aline-center">
             <ul>
               <li><a href="index.html">Главная</a></li>
               <li><a href="#">Компания</a></li>
@@ -279,28 +281,25 @@
       </section>
     </footer>
 
-    <section class="modal modal-login visually-hidden">
+    <section class="modal modal-back visually-hidden">
         <h2 class="visually-hidden">Напишите нам</h2>
         <!--модальное окно с формой обратной связи-->
-          <form action="https://echo.htmlacademy.ru" method="POST">
-            <p>
-              <label for="name">Ваше имя:
-                <input type="text" id="name" placeholder="Имя Фамилия">
-              </label>
+          <form class="modal-form-back" action="https://echo.htmlacademy.ru" method="POST">
+            <p class="form-item form-item-name">
+              <label for="name">Ваше имя:<br></label>
+              <input type="text" id="name" placeholder="Имя Фамилия">
             </p>
-            <p>
-              <label for="email">Ваш email:
-                <input type="text" id="email" placeholder="email@example.com">
-              </label>
-              </p>
-              <p>
-              <label for="letter">Текст письма:
+            <p class="form-item form-item-email">
+              <label for="email">Ваш email:<br></label>
+              <input type="text" id="email" placeholder="email@example.com">
+            </p>
+            <p class="form-item-text">
+              <label for="letter"> Текст письма:<br></label>
                 <textarea id="letter" placeholder="В свободной форме"></textarea>
-              </label>
-              </p>
-              <p class="modal-bottom">
-                <button class="button btn-modal"type="submit">ОТПРАВИТЬ</button>
-              </p>
+            </p>
+            <p class="modal-bottom">
+              <button class="button btn-modal" type="submit">ОТПРАВИТЬ</button>
+            </p>
           </form>
               <button class="modal-close" type="button">
                 <span class="visually-hidden">Закрыть</span>
